@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Landing Page</title>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">ß
+            <img src="./static/img/jamify-01.png" alt = "logo"
+            width="150"
+            height="150">
+        </div>
+    </header>
+<body>
+    <div class = "survey-title">
+        <h2>How are you feeling today?</h2>
+    </div>
+</body>
+<body>
+    <div id = "dot-wrapper">
+        <form class="dot-form" action="http://127.0.0.1:4455/ranking" method="POST">
+            <div id = "dot-slider">
+                <input type="radio" name="dot-amount" id="1" value="1">
+                <label for="1" data-dot-amounts="miserable"></label>
+
+                <input type="radio" name="dot-amount" id="2" value="2">
+                <label for="2" data-dot-amounts="sad"></label>
+
+                <input type="radio" name="dot-amount" id="3" value="3">
+                <label for="3" data-dot-amounts="meh"></label>
+
+                <input type="radio" name="dot-amount" id="4" value="4">
+                <label for="4" data-dot-amounts="positive"></label>
+
+                <input type="radio" name="dot-amount" id="5" value="5">
+                <label for="5" data-dot-amounts="overjoyed"></label>
+                <div id="dot-input-label"></div>
+                
+            </div>
+        </form>
+        <div style = "position:relative; top: 120px">
+            <button type="submit" onclick="location.href = '/playlistname';">I'm ready for my playlist</button>
+        </div>
+    </div>
+</body>
+
+</html>
